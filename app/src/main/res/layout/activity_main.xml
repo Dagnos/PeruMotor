@@ -28,6 +28,7 @@
         app:fabSize="normal"
         app:elevation="6dp"
         android:src="@drawable/ic_add"
+        android:backgroundTint="@color/perumotorPrincipal"
         >
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
