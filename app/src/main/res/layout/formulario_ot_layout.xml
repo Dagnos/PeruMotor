@@ -5,8 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ffffff"
     tools:context=".FormularioOTActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,6 +37,9 @@
                     android:id="@+id/lblOT"
                     android:layout_width="0dp"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:layout_height="wrap_content"
                     android:text="Orden de trabajo:" />
 
@@ -49,6 +61,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="T. Cambio:" />
 
                 <TextView
@@ -69,6 +84,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Tipo de Orden:" />
 
                 <Spinner
@@ -95,6 +113,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Punto de Emision:" />
 
                 <TextView
@@ -115,6 +136,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Moneda:" />
 
                 <Spinner
@@ -134,6 +158,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Tipo de Trabajo:" />
 
                 <Spinner
@@ -160,6 +187,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Fecha:" />
 
                 <TextView
@@ -180,6 +210,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_margin="14dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/caviardreamsbold"
             android:text="Datos Generales" />
     </LinearLayout>
 
@@ -203,6 +237,9 @@
                     android:id="@+id/lblPropietario"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:layout_height="wrap_content"
                     android:text="Propietario:" />
 
@@ -224,6 +261,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Dirección:" />
 
                 <TextView
@@ -253,6 +293,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Facturar a:" />
 
                 <EditText
@@ -273,6 +316,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="RUC:" />
 
                 <TextView
@@ -294,6 +340,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_margin="14dp"
+            android:fontFamily="@font/caviardreamsbold"
             android:text="Datos Vehículos:" />
     </LinearLayout>
 
@@ -317,6 +367,9 @@
                     android:id="@+id/lblVehiculo"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:layout_height="wrap_content"
                     android:text="Vehículo:" />
 
@@ -338,6 +391,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Marca:" />
 
                 <TextView
@@ -358,6 +414,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Modelo:" />
 
                 <TextView
@@ -384,6 +443,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/caviardreamsbold"
                         android:text="Año:" />
 
                     <TextView
@@ -408,6 +470,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Color:" />
 
                 <TextView
@@ -437,6 +502,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Placa:" />
 
                 <TextView
@@ -457,6 +525,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Kilometraje:" />
 
                 <EditText
@@ -477,6 +548,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Modelo TDP:" />
 
                 <TextView
@@ -497,6 +571,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Nro Motor:" />
 
                 <TextView
@@ -517,6 +594,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Nro Chasis:" />
 
                 <TextView
@@ -538,6 +618,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_margin="14dp"
+            android:fontFamily="@font/caviardreamsbold"
             android:text="Otros Datos:" />
     </LinearLayout>
 
@@ -561,6 +645,9 @@
                     android:id="@+id/lblSucursal"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:layout_height="wrap_content"
                     android:text="Sucursal:" />
 
@@ -581,6 +668,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Forma de pago:" />
 
                 <Spinner
@@ -600,6 +690,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Obervaciones:" />
 
                 <EditText
@@ -628,6 +721,9 @@
                     android:layout_width="match_parent"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
                     android:text="Asesor Servicio" />
 
                 <EditText
@@ -647,6 +743,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_margin="14dp"
+            android:fontFamily="@font/caviardreamsbold"
             android:text="Imágenes" />
     </LinearLayout>
 
@@ -657,19 +758,54 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="350dp">
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="350dp"
                 android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/boceto_auto" />
-        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/imagen_subir"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/imagen_subir"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/imagen_subir"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
