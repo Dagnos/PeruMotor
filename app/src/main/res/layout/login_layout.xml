@@ -59,9 +59,11 @@
         android:fontFamily="@font/caviardreamsbold"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="40dp"
-        android:background="@drawable/btn_bg"
         android:id="@+id/btnIngresar"
         android:text="Iniciar Sesion"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/perumotorPrincipal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

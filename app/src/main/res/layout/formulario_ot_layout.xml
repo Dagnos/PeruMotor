@@ -20,6 +20,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="15dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -39,6 +40,7 @@
                     android:layout_weight="1"
                     android:textColor="#000"
                     android:textSize="16dp"
+                    android:ems="5"
                     android:fontFamily="@font/caviardreamsbold"
                     android:layout_height="wrap_content"
                     android:text="Orden de trabajo:" />
@@ -48,6 +50,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@drawable/style_edittext"
+                    android:fontFamily="@font/caviardreamsbolditalic"
                     android:text="0043241" />
             </LinearLayout>
 
@@ -63,6 +67,7 @@
                     android:layout_weight="1"
                     android:textColor="#000"
                     android:textSize="16dp"
+                    android:ems="5"
                     android:fontFamily="@font/caviardreamsbold"
                     android:text="T. Cambio:" />
 
@@ -71,6 +76,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:text="3.323" />
             </LinearLayout>
 
@@ -93,6 +100,7 @@
                     android:id="@+id/spinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreamsbolditalic"
                     android:layout_weight="1" />
             </LinearLayout>
         </LinearLayout>
@@ -123,6 +131,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:text="AREQUIPA" />
             </LinearLayout>
 
@@ -145,6 +156,7 @@
                     android:id="@+id/spinner2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreamsbolditalic"
                     android:layout_weight="1" />
             </LinearLayout>
 
@@ -167,6 +179,7 @@
                     android:id="@+id/spinner3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreamsbolditalic"
                     android:layout_weight="1" />
             </LinearLayout>
         </LinearLayout>
@@ -197,6 +210,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:text="21/01/2020 05:39:46P" />
             </LinearLayout>
 
@@ -220,6 +236,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="15dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -248,6 +265,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:hint="llene aquí" />
             </LinearLayout>
 
@@ -271,7 +293,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Calle los olvidados de Dios" />
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
+                    android:text="Calle los olvide Dios" />
             </LinearLayout>
 
 
@@ -303,6 +328,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:hint="llene aquí"/>
             </LinearLayout>
 
@@ -326,7 +356,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="10745868687"/>
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
+                    android:text="107458687"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -350,6 +383,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="15dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -378,6 +412,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:hint="llene aquí" />
             </LinearLayout>
 
@@ -401,6 +440,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:text="MITSUBISHI" />
             </LinearLayout>
 
@@ -424,6 +466,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:text="MIRAGE G4 LS 2.0" />
             </LinearLayout>
 
@@ -453,6 +498,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:ems="5"
+                        android:fontFamily="@font/caviardreamsbolditalic"
+                        android:background="@drawable/style_edittext"
                         android:text="1996" />
 
 
@@ -480,6 +528,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:text="BLANCO" />
             </LinearLayout>
 
@@ -512,6 +563,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:text="V3F-568" />
             </LinearLayout>
 
@@ -535,6 +589,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:hint="llene aquí"/>
             </LinearLayout>
 
@@ -558,6 +617,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:text="MIRAGE G4"/>
             </LinearLayout>
 
@@ -581,6 +643,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:text="3A41 2345364" />
             </LinearLayout>
 
@@ -604,6 +669,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
                     android:text="MMBXNA034GRT456ST" />
             </LinearLayout>
 
@@ -628,6 +696,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="15dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -655,6 +724,7 @@
                     android:id="@+id/spnSucursalF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreamsbolditalic"
                     android:layout_weight="1" />
             </LinearLayout>
 
@@ -677,6 +747,7 @@
                     android:id="@+id/spnFPagoF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreamsbolditalic"
                     android:layout_weight="1" />
             </LinearLayout>
 
@@ -699,7 +770,14 @@
                     android:id="@+id/txtObservacionesF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:ems="5"
+                    android:hint="llene aquí"/>
             </LinearLayout>
 
 
@@ -730,7 +808,13 @@
                     android:id="@+id/txtAServicioF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
+                    android:layout_weight="1"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:ems="5"
+                    android:hint="llene aquí" />
             </LinearLayout>
         </LinearLayout>
 
@@ -758,6 +842,7 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="15dp"
         android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -773,27 +858,28 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/boceto_auto" />
+                app:srcCompat="@drawable/boceto_auto"/>
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imgLIzquierdo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/imagen_subir"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+                app:layout_constraintTop_toTopOf="@+id/imageView2"/>
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imgLDerecho"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/imagen_subir"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"/>
 
             <ImageView
+                android:id="@+id/imgMedio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/imagen_subir"
@@ -801,8 +887,50 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+            <ImageView
+                android:id="@+id/imgFrontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/imagen_subir"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgMedio"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgIFrontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/imagen_subir"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgMedio"
+                app:layout_constraintStart_toEndOf="@+id/imgFrontal"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/imgPosterior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/imagen_subir"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgMedio"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+            <ImageView
+                android:id="@+id/imgIPosterior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/imagen_subir"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgPosterior"
+                app:layout_constraintStart_toEndOf="@+id/imgMedio"
+                app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
+
 
         </LinearLayout>
 
