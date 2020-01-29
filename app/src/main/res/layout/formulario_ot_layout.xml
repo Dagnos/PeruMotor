@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FormularioOTActivity">
+    tools:context=".Views.FormularioOTActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -816,6 +816,7 @@
                     android:ems="5"
                     android:hint="llene aquí" />
             </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
@@ -930,7 +931,313 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
 
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Manual de Instrucción"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Puerta Izquierda"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Manual de Garantía"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Puerta Derecha"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Tarjeta de Propiedad/Soat"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Espejo lateral Izquierdo"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Luces altas"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Espejo lateral Derecho"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Luces bajas"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Espejo interior cabina"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Luces de retroceso"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Extintor"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Luces viraje"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Botiquin"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Luces de emergencia"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Triángulo (conos)"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Luces de Freno"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Alarma retroceso"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Tercera luz de Freno"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Barrote"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Luces de estacionamiento"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Llave rueda"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Luces patentes"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:text="Cinta reflectante"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.kyanogen.signatureview.SignatureView
+                    xmlns:sign="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/signature_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    sign:penSize="5dp"
+                    sign:backgroundColor="#ffffff"
+                    sign:penColor="#000000"
+                    sign:enableSignature="true"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clearf"
+                    android:text="clearf"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/savef"
+                    android:text="savef"/>
+            </LinearLayout>
 
         </LinearLayout>
 

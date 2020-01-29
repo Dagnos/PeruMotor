@@ -1,4 +1,4 @@
-package com.example.prueba;
+package com.example.prueba.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.example.prueba.R;
 
 public class LoginActivity extends AppCompatActivity {
 

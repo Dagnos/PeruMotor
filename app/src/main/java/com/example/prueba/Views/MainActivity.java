@@ -1,4 +1,4 @@
-package com.example.prueba;
+package com.example.prueba.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,6 +8,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.prueba.Adapter.AdapterClass;
+import com.example.prueba.Models.ModelClass;
+import com.example.prueba.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
