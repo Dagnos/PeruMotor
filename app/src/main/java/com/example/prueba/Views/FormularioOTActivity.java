@@ -19,9 +19,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import com.example.prueba.Interface.APIPerumotor;
-import com.example.prueba.Models.OrdenTrabajo;
 import com.example.prueba.R;
 import com.kyanogen.signatureview.SignatureView;
 
@@ -31,13 +28,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
 
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
+
 
 
 public class FormularioOTActivity extends AppCompatActivity {
 
-    private final String baseUrl = "http://10.22.3.29:3000/";
+
 
     ImageView btnLIzquierdo, btnLDerecho, btnMedio, btnFrontal, btnIFrontal, btnIPosterior, btnPosterior;
 
@@ -51,9 +47,6 @@ public class FormularioOTActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.formulario_ot_layout);
 
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(baseUrl).addCallAdapterFactory(GsonConverterFactory.create()).build();
-
-        APIPerumotor apiPerumotor = retrofit.create(APIPerumotor.class);
 
         signatureView =  (SignatureView) findViewById(R.id.signature_view);
         clear = (Button) findViewById(R.id.clearf);
