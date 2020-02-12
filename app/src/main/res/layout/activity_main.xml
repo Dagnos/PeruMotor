@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
     >
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview"
+            android:id="@+id/ot_recyclerview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -28,6 +28,18 @@
         app:fabSize="normal"
         app:elevation="6dp"
         android:src="@drawable/ic_add"
+        android:backgroundTint="@color/perumotorPrincipal"
+        >
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_btn2"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        app:fabSize="normal"
+        app:elevation="6dp"
+        android:src="@drawable/ic_search_black"
         android:backgroundTint="@color/perumotorPrincipal"
         >
 

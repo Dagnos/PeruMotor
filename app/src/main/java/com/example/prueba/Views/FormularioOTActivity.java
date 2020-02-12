@@ -19,6 +19,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
+
 import com.example.prueba.R;
 import com.kyanogen.signatureview.SignatureView;
 
@@ -29,26 +30,24 @@ import java.io.IOException;
 import java.util.Calendar;
 
 
-
-
 public class FormularioOTActivity extends AppCompatActivity {
-
 
 
     ImageView btnLIzquierdo, btnLDerecho, btnMedio, btnFrontal, btnIFrontal, btnIPosterior, btnPosterior;
 
     Bitmap bitmap;
-    Button clear,save;
+    Button clear, save;
     SignatureView signatureView;
     String path;
     private static final String IMAGE_DIRECTORY = "/Camera";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.formulario_ot_layout);
 
 
-        signatureView =  (SignatureView) findViewById(R.id.signature_view);
+        signatureView = (SignatureView) findViewById(R.id.signature_view);
         clear = (Button) findViewById(R.id.clearf);
         save = (Button) findViewById(R.id.savef);
 
@@ -76,7 +75,7 @@ public class FormularioOTActivity extends AppCompatActivity {
                 // have the object build the directory structure, if needed.
                 if (!wallpaperDirectory.exists()) {
                     wallpaperDirectory.mkdirs();
-                    Log.d("hhhhh",wallpaperDirectory.toString());
+                    Log.d("hhhhh", wallpaperDirectory.toString());
                 }
 
                 try {
@@ -94,13 +93,12 @@ public class FormularioOTActivity extends AppCompatActivity {
                     return f.getAbsolutePath();
                 } catch (IOException e1) {
                     e1.printStackTrace();
-                    Toast.makeText(FormularioOTActivity.this,"Error al cargar imange",Toast.LENGTH_LONG).show();
+                    Toast.makeText(FormularioOTActivity.this, "Error al cargar imange", Toast.LENGTH_LONG).show();
                 }
                 return "";
 
             }
         });
-
 
 
         //tomar foto Lateral Izquierdo
@@ -116,11 +114,11 @@ public class FormularioOTActivity extends AppCompatActivity {
                 alertOpciones.setItems(opciones, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        if (opciones[i].equals("Tomar Foto")){
+                        if (opciones[i].equals("Tomar Foto")) {
                             if (ContextCompat.checkSelfPermission(FormularioOTActivity.this, Manifest.permission.CAMERA)
                                     == PackageManager.PERMISSION_GRANTED) {
                                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                                startActivityForResult(intent,20);
+                                startActivityForResult(intent, 20);
                             } else {
                                 if (!ActivityCompat.shouldShowRequestPermissionRationale(FormularioOTActivity.this,
                                         Manifest.permission.CAMERA)) {
@@ -132,7 +130,7 @@ public class FormularioOTActivity extends AppCompatActivity {
                         } else {
                             Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                             intent.setType("image/");
-                            startActivityForResult(intent.createChooser(intent,"Seleccione la Aplicación"),10);
+                            startActivityForResult(intent.createChooser(intent, "Seleccione la Aplicación"), 10);
                         }
                     }
                 });
@@ -154,11 +152,11 @@ public class FormularioOTActivity extends AppCompatActivity {
                 alertOpciones.setItems(opciones, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        if (opciones[i].equals("Tomar Foto")){
+                        if (opciones[i].equals("Tomar Foto")) {
                             if (ContextCompat.checkSelfPermission(FormularioOTActivity.this, Manifest.permission.CAMERA)
                                     == PackageManager.PERMISSION_GRANTED) {
                                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                                startActivityForResult(intent,20);
+                                startActivityForResult(intent, 20);
                             } else {
                                 if (!ActivityCompat.shouldShowRequestPermissionRationale(FormularioOTActivity.this,
                                         Manifest.permission.CAMERA)) {
@@ -170,7 +168,7 @@ public class FormularioOTActivity extends AppCompatActivity {
                         } else {
                             Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                             intent.setType("image/");
-                            startActivityForResult(intent.createChooser(intent,"Seleccione la Aplicación"),10);
+                            startActivityForResult(intent.createChooser(intent, "Seleccione la Aplicación"), 10);
                         }
                     }
                 });
@@ -192,11 +190,11 @@ public class FormularioOTActivity extends AppCompatActivity {
                 alertOpciones.setItems(opciones, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        if (opciones[i].equals("Tomar Foto")){
+                        if (opciones[i].equals("Tomar Foto")) {
                             if (ContextCompat.checkSelfPermission(FormularioOTActivity.this, Manifest.permission.CAMERA)
                                     == PackageManager.PERMISSION_GRANTED) {
                                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                                startActivityForResult(intent,20);
+                                startActivityForResult(intent, 20);
                             } else {
                                 if (!ActivityCompat.shouldShowRequestPermissionRationale(FormularioOTActivity.this,
                                         Manifest.permission.CAMERA)) {
@@ -208,7 +206,7 @@ public class FormularioOTActivity extends AppCompatActivity {
                         } else {
                             Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                             intent.setType("image/");
-                            startActivityForResult(intent.createChooser(intent,"Seleccione la Aplicación"),10);
+                            startActivityForResult(intent.createChooser(intent, "Seleccione la Aplicación"), 10);
                         }
                     }
                 });
@@ -230,11 +228,11 @@ public class FormularioOTActivity extends AppCompatActivity {
                 alertOpciones.setItems(opciones, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        if (opciones[i].equals("Tomar Foto")){
+                        if (opciones[i].equals("Tomar Foto")) {
                             if (ContextCompat.checkSelfPermission(FormularioOTActivity.this, Manifest.permission.CAMERA)
                                     == PackageManager.PERMISSION_GRANTED) {
                                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                                startActivityForResult(intent,20);
+                                startActivityForResult(intent, 20);
                             } else {
                                 if (!ActivityCompat.shouldShowRequestPermissionRationale(FormularioOTActivity.this,
                                         Manifest.permission.CAMERA)) {
@@ -246,7 +244,7 @@ public class FormularioOTActivity extends AppCompatActivity {
                         } else {
                             Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                             intent.setType("image/");
-                            startActivityForResult(intent.createChooser(intent,"Seleccione la Aplicación"),10);
+                            startActivityForResult(intent.createChooser(intent, "Seleccione la Aplicación"), 10);
                         }
                     }
                 });
@@ -268,11 +266,11 @@ public class FormularioOTActivity extends AppCompatActivity {
                 alertOpciones.setItems(opciones, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        if (opciones[i].equals("Tomar Foto")){
+                        if (opciones[i].equals("Tomar Foto")) {
                             if (ContextCompat.checkSelfPermission(FormularioOTActivity.this, Manifest.permission.CAMERA)
                                     == PackageManager.PERMISSION_GRANTED) {
                                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                                startActivityForResult(intent,20);
+                                startActivityForResult(intent, 20);
                             } else {
                                 if (!ActivityCompat.shouldShowRequestPermissionRationale(FormularioOTActivity.this,
                                         Manifest.permission.CAMERA)) {
@@ -284,7 +282,7 @@ public class FormularioOTActivity extends AppCompatActivity {
                         } else {
                             Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                             intent.setType("image/");
-                            startActivityForResult(intent.createChooser(intent,"Seleccione la Aplicación"),10);
+                            startActivityForResult(intent.createChooser(intent, "Seleccione la Aplicación"), 10);
                         }
                     }
                 });
@@ -306,11 +304,11 @@ public class FormularioOTActivity extends AppCompatActivity {
                 alertOpciones.setItems(opciones, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        if (opciones[i].equals("Tomar Foto")){
+                        if (opciones[i].equals("Tomar Foto")) {
                             if (ContextCompat.checkSelfPermission(FormularioOTActivity.this, Manifest.permission.CAMERA)
                                     == PackageManager.PERMISSION_GRANTED) {
                                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                                startActivityForResult(intent,20);
+                                startActivityForResult(intent, 20);
                             } else {
                                 if (!ActivityCompat.shouldShowRequestPermissionRationale(FormularioOTActivity.this,
                                         Manifest.permission.CAMERA)) {
@@ -322,7 +320,7 @@ public class FormularioOTActivity extends AppCompatActivity {
                         } else {
                             Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                             intent.setType("image/");
-                            startActivityForResult(intent.createChooser(intent,"Seleccione la Aplicación"),10);
+                            startActivityForResult(intent.createChooser(intent, "Seleccione la Aplicación"), 10);
                         }
                     }
                 });
@@ -344,11 +342,11 @@ public class FormularioOTActivity extends AppCompatActivity {
                 alertOpciones.setItems(opciones, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        if (opciones[i].equals("Tomar Foto")){
+                        if (opciones[i].equals("Tomar Foto")) {
                             if (ContextCompat.checkSelfPermission(FormularioOTActivity.this, Manifest.permission.CAMERA)
                                     == PackageManager.PERMISSION_GRANTED) {
                                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                                startActivityForResult(intent,20);
+                                startActivityForResult(intent, 20);
                             } else {
                                 if (!ActivityCompat.shouldShowRequestPermissionRationale(FormularioOTActivity.this,
                                         Manifest.permission.CAMERA)) {
@@ -360,7 +358,7 @@ public class FormularioOTActivity extends AppCompatActivity {
                         } else {
                             Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                             intent.setType("image/");
-                            startActivityForResult(intent.createChooser(intent,"Seleccione la Aplicación"),10);
+                            startActivityForResult(intent.createChooser(intent, "Seleccione la Aplicación"), 10);
                         }
                     }
                 });
