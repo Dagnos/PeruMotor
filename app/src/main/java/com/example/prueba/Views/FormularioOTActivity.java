@@ -17,9 +17,16 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.prueba.Adapter.OrdenTrabajoAdapter;
+import com.example.prueba.Interface.APIPerumotor;
+import com.example.prueba.Interface.RetrofitClient;
+import com.example.prueba.Models.OrdenTrabajo;
+import com.example.prueba.Models.Vehiculo;
 import com.example.prueba.R;
 import com.kyanogen.signatureview.SignatureView;
 
@@ -27,11 +34,22 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 
 public class FormularioOTActivity extends AppCompatActivity {
 
+
+    String placa = "awh-946";
 
     ImageView btnLIzquierdo, btnLDerecho, btnMedio, btnFrontal, btnIFrontal, btnIPosterior, btnPosterior;
 
@@ -39,12 +57,28 @@ public class FormularioOTActivity extends AppCompatActivity {
     Button clear, save;
     SignatureView signatureView;
     String path;
+    EditText txtBuscarPlaca;
+    TextView txtMarca, txtModelo, txtAño, txtColor, txtPlaca, txtModeloTDP, txtNroMotor, txtNroChasis;
     private static final String IMAGE_DIRECTORY = "/Camera";
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.formulario_ot_layout);
+
+        //datos vehículos
+        txtMarca = (TextView) findViewById(R.id.txtMarcaF);
+        txtModelo = (TextView) findViewById(R.id.txtModeloF);
+        txtColor = (TextView) findViewById(R.id.txtColorF);
+        txtPlaca = (TextView) findViewById(R.id.txtplacaF);
+        txtModeloTDP = (TextView) findViewById(R.id.txtModeloTDPF);
+        txtNroMotor = (TextView) findViewById(R.id.txtNMotorF);
+        txtNroChasis = (TextView) findViewById(R.id.txtNChasisF);
+        txtBuscarPlaca = (EditText) findViewById(R.id.txtVehiculoF);
+
+
 
 
         signatureView = (SignatureView) findViewById(R.id.signature_view);
@@ -367,6 +401,39 @@ public class FormularioOTActivity extends AppCompatActivity {
             }
         });
 
+        getVehiculo();
+
+    }
+    private void getVehiculo() {
+        Retrofit retrofit=new Retrofit.Builder().baseUrl("http://10.22.3.29:3000").addConverterFactory(GsonConverterFactory.create()).build();
+        APIPerumotor apiPerumotor=retrofit.create(APIPerumotor.class);
+        Call<Vehiculo> call=apiPerumotor.getVehiculo(placa);
+
+
+
+
+        call.enqueue(new Callback<Vehiculo>() {
+            @Override
+            public void onResponse(Call<Vehiculo> call, Response<Vehiculo> response) {
+
+
+                Log.d("idvehiculo", response.body().getIDVEHICULO());
+                txtMarca.setText(response.body().getDSMARCA());
+                txtModelo.setText(response.body().getDSMODELO());
+                txtAño.setText(response.body().getANIO());
+                txtColor.setText(response.body().getDSCOLOR());
+                txtPlaca.setText(response.body().getPLACA());
+                txtModeloTDP.setText(response.body().getCODIGOTDP());
+                txtNroMotor.setText(response.body().getNROMOTOR());
+                txtNroChasis.setText(response.body().getNROCHASIS());
+            }
+
+            @Override
+            public void onFailure(Call<Vehiculo> call, Throwable t) {
+                Toast.makeText(FormularioOTActivity.this,"Error",Toast.LENGTH_SHORT).show();
+                Log.d("error", t.getMessage());
+            }
+        });
     }
 
 }

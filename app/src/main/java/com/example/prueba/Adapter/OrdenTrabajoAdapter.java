@@ -13,7 +13,6 @@ import com.example.prueba.Models.OrdenTrabajo;
 import com.example.prueba.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class OrdenTrabajoAdapter extends RecyclerView.Adapter<OrdenTrabajoAdapter.ViewHolder> {
 
