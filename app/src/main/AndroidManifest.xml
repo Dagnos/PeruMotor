@@ -8,6 +8,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -18,12 +22,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".Views.PdfActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Views.CreateVehiculoActivity" />
+        <activity
+            android:name=".Views.SignatureActivity"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".Views.BuscarOTActivity"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".Views.AdminActivity"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".Views.MainActivity"
             android:screenOrientation="landscape" />

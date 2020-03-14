@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Views.CreateVehiculoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_margin="14dp"
+            android:fontFamily="@font/caviardreamsbold"
+            android:text="Datos Vehículos:" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblVehiculo"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    android:layout_height="wrap_content"
+                    android:text="Vehículo - Placa:" />
+
+
+                <EditText
+                    android:id="@+id/txtVehiculoF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:ems="5"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
+                    android:hint="llene aquí" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMarca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    android:text="Cliente:" />
+
+                <EditText
+                    android:id="@+id/txt_idcliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:ems="5"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
+                    android:hint="llene aquí" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblModelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    android:text="Nro Motor:" />
+
+                <EditText
+                    android:id="@+id/txt_nromotor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:ems="5"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
+                    android:hint="llene aquí" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblAño"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_margin="12dp"
+                        android:fontFamily="@font/caviardreamsbold"
+                        android:text="Nro Chasis:" />
+
+                    <EditText
+                        android:id="@+id/txt_nrochasis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine"
+                        android:lines="1"
+                        android:ems="5"
+                        android:textSize="16dp"
+                        android:layout_margin="12dp"
+                        android:fontFamily="@font/caviardreamsbolditalic"
+                        android:background="@drawable/style_edittext"
+                        android:hint="llene aquí" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    android:text="Color:" />
+
+                <TextView
+                    android:id="@+id/lblidColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    />
+                <Spinner
+                    android:id="@+id/spn_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblPlaca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    android:text="Marca:" />
+
+                <TextView
+                    android:id="@+id/lblidMarca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    />
+                <Spinner
+                    android:id="@+id/spn_marca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblKilometraje"
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_weight="1"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    android:text="Año:"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/txt_año"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="12dp"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:ems="5"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
+                    android:hint="llene aquí" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblModeloTDP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="12dp"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    android:text="Año Modelo:" />
+
+                <EditText
+                    android:id="@+id/txt_añomodelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="12dp"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:ems="5"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
+                    android:hint="llene aquí" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblNMotor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    android:text="VIN:" />
+
+                <EditText
+                    android:id="@+id/txt_vin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:ems="5"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
+                    android:hint="llene aquí" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblNChasis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    android:text="Modelo Vehículo:" />
+
+                <TextView
+                    android:id="@+id/lblidmodelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    />
+                <Spinner
+                    android:id="@+id/spn_modelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_crearvehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Crear Vehículo"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/perumotorPrincipal"></Button>
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

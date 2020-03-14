@@ -19,7 +19,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_margin="15dp"
         android:orientation="horizontal">
 
@@ -41,9 +41,18 @@
                     android:textColor="#000"
                     android:textSize="16dp"
                     android:ems="5"
+                    android:lines="1"
                     android:fontFamily="@font/caviardreamsbold"
                     android:layout_height="wrap_content"
                     android:text="Orden de trabajo:" />
+
+                <TextView
+                    android:id="@+id/txtSerieF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_edittext"
+                    android:fontFamily="@font/caviardreamsbolditalic" />
 
                 <TextView
                     android:id="@+id/txtOrdenTrabajoF"
@@ -51,9 +60,11 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/style_edittext"
-                    android:fontFamily="@font/caviardreamsbolditalic"
-                    android:text="0043241" />
+                    android:fontFamily="@font/caviardreamsbolditalic" />
+
+
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -77,30 +88,37 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/caviardreamsbolditalic"
-                    android:background="@drawable/style_edittext"
-                    android:text="3.323" />
+                    android:background="@drawable/style_edittext" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_margin="2dp">
 
                 <TextView
                     android:id="@+id/lblTOrden"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textColor="#000"
                     android:textSize="16dp"
                     android:fontFamily="@font/caviardreamsbold"
                     android:text="Tipo de Orden:" />
+                <TextView
+                    android:id="@+id/txt_tipo_orden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
+                    ></TextView>
 
                 <Spinner
-                    android:id="@+id/spinner"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:id="@+id/spn_tipo_orden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1" />
             </LinearLayout>
         </LinearLayout>
@@ -134,7 +152,35 @@
                     android:ems="5"
                     android:fontFamily="@font/caviardreamsbolditalic"
                     android:background="@drawable/style_edittext"
-                    android:text="AREQUIPA" />
+                    android:text="001" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAsesor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    android:text="Asesor:" />
+
+                <TextView
+                    android:id="@+id/txtAsesorF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="5"
+                    android:text="0000111"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext" />
             </LinearLayout>
 
             <LinearLayout
@@ -144,44 +190,32 @@
 
                 <TextView
                     android:id="@+id/lblMoneda"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:textColor="#000"
                     android:textSize="16dp"
+
                     android:fontFamily="@font/caviardreamsbold"
                     android:text="Moneda:" />
 
-                <Spinner
-                    android:id="@+id/spinner2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/caviardreamsbolditalic"
-                    android:layout_weight="1" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
                 <TextView
-                    android:id="@+id/lblTTrabajo"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:id="@+id/txt_moneda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="#000"
-                    android:textSize="16dp"
-                    android:fontFamily="@font/caviardreamsbold"
-                    android:text="Tipo de Trabajo:" />
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"
+                    ></TextView>
 
                 <Spinner
-                    android:id="@+id/spinner3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:id="@+id/spn_moneda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1" />
             </LinearLayout>
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -211,66 +245,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="5"
-                    android:fontFamily="@font/caviardreamsbolditalic"
-                    android:background="@drawable/style_edittext"
-                    android:text="21/01/2020 05:39:46P" />
-            </LinearLayout>
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#000"
-            android:layout_margin="14dp"
-            android:textSize="20dp"
-            android:fontFamily="@font/caviardreamsbold"
-            android:text="Datos Generales" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/lblPropietarioBuscar"
-                    android:layout_width="match_parent"
-                    android:layout_weight="1"
-                    android:textColor="#000"
-                    android:textSize="16dp"
-                    android:fontFamily="@font/caviardreamsbold"
-                    android:layout_height="wrap_content"
-                    android:text="Buscar propietario:" />
-
-                <EditText
-                    android:id="@+id/txtPropietarioF"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:inputType="textMultiLine"
                     android:lines="1"
-                    android:ems="5"
                     android:fontFamily="@font/caviardreamsbolditalic"
-                    android:background="@drawable/style_edittext"
-                    android:hint="llene aquí" />
+                    android:background="@drawable/style_edittext" />
             </LinearLayout>
 
             <LinearLayout
@@ -279,60 +256,26 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/lblPropietario"
-                    android:layout_width="match_parent"
-                    android:layout_weight="1"
-                    android:textColor="#000"
-                    android:textSize="16dp"
-                    android:fontFamily="@font/caviardreamsbold"
-                    android:layout_height="wrap_content"
-                    android:text="Propietario:" />
-
-                <TextView
-                    android:id="@+id/txtPropietario"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="5"
-                    android:fontFamily="@font/caviardreamsbolditalic"
-                    android:background="@drawable/style_edittext"
-                    android:text="INDUSTRIAS SA" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/lblDireccion"
+                    android:id="@+id/lblPeriodo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textColor="#000"
                     android:textSize="16dp"
                     android:fontFamily="@font/caviardreamsbold"
-                    android:text="Dirección:" />
+                    android:text="Periodo:" />
 
                 <TextView
-                    android:id="@+id/txtDireccionF"
+                    android:id="@+id/txtPeriodoF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="5"
                     android:fontFamily="@font/caviardreamsbolditalic"
-                    android:background="@drawable/style_edittext"
-                    android:text="Calle los olvide Dios" />
+                    android:background="@drawable/style_edittext" />
             </LinearLayout>
 
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -340,82 +283,32 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/lblFacturaraBuscar"
-                    android:layout_width="match_parent"
+                    android:id="@+id/lblTTrabajo"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textColor="#000"
-                    android:textSize="16dp"
+                    android:textSize="14dp"
                     android:fontFamily="@font/caviardreamsbold"
-                    android:text="Buscar a quien facturar:" />
+                    android:text="Tipo de Trabajo:" />
 
-                <EditText
-                    android:id="@+id/txtFacturaAF"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/txt_tipo_trabajo"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:inputType="textMultiLine"
-                    android:lines="1"
-                    android:ems="5"
                     android:fontFamily="@font/caviardreamsbolditalic"
                     android:background="@drawable/style_edittext"
-                    android:hint="llene aquí"/>
-            </LinearLayout>
+                    ></TextView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/lblFacturara"
-                    android:layout_width="match_parent"
-                    android:layout_weight="1"
-                    android:textColor="#000"
-                    android:textSize="16dp"
-                    android:fontFamily="@font/caviardreamsbold"
-                    android:layout_height="wrap_content"
-                    android:text="Facturar a:" />
-
-                <TextView
-                    android:id="@+id/txtFactura"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="5"
-                    android:fontFamily="@font/caviardreamsbolditalic"
-                    android:background="@drawable/style_edittext"
-                    android:text="JUAN PEREZ" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/lblRuc"
-                    android:layout_width="match_parent"
+                <Spinner
+                    android:id="@+id/spn_tipo_trabajo"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textColor="#000"
-                    android:textSize="16dp"
-                    android:fontFamily="@font/caviardreamsbold"
-                    android:text="RUC:" />
-
-                <TextView
-                    android:id="@+id/txtRucF"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="5"
-                    android:fontFamily="@font/caviardreamsbolditalic"
-                    android:background="@drawable/style_edittext"
-                    android:text="107458687"/>
+                    android:layout_weight="1" />
             </LinearLayout>
 
         </LinearLayout>
-
     </LinearLayout>
 
     <LinearLayout
@@ -459,6 +352,7 @@
                     android:layout_height="wrap_content"
                     android:text="Vehículo:" />
 
+
                 <EditText
                     android:id="@+id/txtVehiculoF"
                     android:layout_width="match_parent"
@@ -470,6 +364,15 @@
                     android:fontFamily="@font/caviardreamsbolditalic"
                     android:background="@drawable/style_edittext"
                     android:hint="llene aquí" />
+
+                <Button
+                    android:id="@+id/btn_buscarVehiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/perumotorPrincipal"
+                    android:drawableBottom="@drawable/ic_search_black"/>
+
             </LinearLayout>
 
             <LinearLayout
@@ -492,10 +395,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:ems="5"
-                    android:fontFamily="@font/caviardreamsbolditalic"
                     android:background="@drawable/style_edittext"
-                    android:text="MITSUBISHI" />
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic" />
             </LinearLayout>
 
             <LinearLayout
@@ -518,10 +420,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:ems="5"
-                    android:fontFamily="@font/caviardreamsbolditalic"
                     android:background="@drawable/style_edittext"
-                    android:text="MIRAGE G4 LS 2.0" />
+                    android:ems="5"
+                    android:fontFamily="@font/caviardreamsbolditalic" />
             </LinearLayout>
 
             <LinearLayout
@@ -553,7 +454,7 @@
                         android:ems="5"
                         android:fontFamily="@font/caviardreamsbolditalic"
                         android:background="@drawable/style_edittext"
-                        android:text="1996" />
+                        />
 
 
                 </LinearLayout>
@@ -583,7 +484,7 @@
                     android:ems="5"
                     android:fontFamily="@font/caviardreamsbolditalic"
                     android:background="@drawable/style_edittext"
-                    android:text="BLANCO" />
+                     />
             </LinearLayout>
 
 
@@ -618,7 +519,7 @@
                     android:ems="5"
                     android:fontFamily="@font/caviardreamsbolditalic"
                     android:background="@drawable/style_edittext"
-                    android:text="V3F-568" />
+                     />
             </LinearLayout>
 
             <LinearLayout
@@ -644,6 +545,7 @@
                     android:inputType="numberDecimal"
                     android:lines="1"
                     android:ems="5"
+                    android:textSize="16dp"
                     android:fontFamily="@font/caviardreamsbolditalic"
                     android:background="@drawable/style_edittext"
                     android:hint="llene aquí"/>
@@ -672,7 +574,7 @@
                     android:ems="5"
                     android:fontFamily="@font/caviardreamsbolditalic"
                     android:background="@drawable/style_edittext"
-                    android:text="MIRAGE G4"/>
+                    />
             </LinearLayout>
 
             <LinearLayout
@@ -698,7 +600,7 @@
                     android:ems="5"
                     android:fontFamily="@font/caviardreamsbolditalic"
                     android:background="@drawable/style_edittext"
-                    android:text="3A41 2345364" />
+                     />
             </LinearLayout>
 
             <LinearLayout
@@ -724,14 +626,193 @@
                     android:ems="5"
                     android:fontFamily="@font/caviardreamsbolditalic"
                     android:background="@drawable/style_edittext"
-                    android:text="MMBXNA034GRT456ST" />
+                     />
             </LinearLayout>
 
         </LinearLayout>
 
     </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_margin="14dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/caviardreamsbold"
+                    android:text="Datos Generales" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblFacturaraBuscar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/caviardreamsbold"
+                            android:text="Buscar a quien facturar:" />
+
+                        <EditText
+                            android:id="@+id/txtFacturaAF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="textMultiLine"
+                            android:lines="1"
+                            android:ems="5"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext"
+                            android:hint="llene aquí"/>
+                        <Button
+                            android:id="@+id/btn_buscarFactura"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/perumotorPrincipal"
+                            android:drawableBottom="@drawable/ic_search_black"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblDireccion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/caviardreamsbold"
+                            android:text="Dirección:" />
+
+                        <TextView
+                            android:id="@+id/txtDireccionF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="5"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblRuc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/caviardreamsbold"
+                            android:text="RUC:" />
+
+                        <TextView
+                            android:id="@+id/txtRucF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="5"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblPropietario"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/caviardreamsbold"
+                            android:layout_height="wrap_content"
+                            android:text="Propietario:" />
+
+                        <TextView
+                            android:id="@+id/txtPropietario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="1"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblFacturara"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/caviardreamsbold"
+                            android:layout_height="wrap_content"
+                            android:text="Facturar a:" />
+
+                        <TextView
+                            android:id="@+id/txtFacturaF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="5"
+                            android:fontFamily="@font/caviardreamsbolditalic"
+                            android:background="@drawable/style_edittext" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
     <LinearLayout
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -741,8 +822,11 @@
             android:textColor="#000"
             android:textSize="20dp"
             android:layout_margin="14dp"
+            android:layout_weight="1"
             android:fontFamily="@font/caviardreamsbold"
             android:text="Otros Datos:" />
+
+
     </LinearLayout>
 
     <LinearLayout
@@ -757,28 +841,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/lblSucursal"
-                    android:layout_width="match_parent"
-                    android:layout_weight="1"
-                    android:textColor="#000"
-                    android:textSize="16dp"
-                    android:fontFamily="@font/caviardreamsbold"
-                    android:layout_height="wrap_content"
-                    android:text="Sucursal:" />
-
-                <Spinner
-                    android:id="@+id/spnSucursalF"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/caviardreamsbolditalic"
-                    android:layout_weight="1" />
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -794,6 +856,14 @@
                     android:textSize="16dp"
                     android:fontFamily="@font/caviardreamsbold"
                     android:text="Forma de pago:" />
+
+                <TextView
+                    android:id="@+id/txt_formapago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/caviardreamsbolditalic"
+                    android:background="@drawable/style_edittext"/>
 
                 <Spinner
                     android:id="@+id/spnFPagoF"
@@ -816,7 +886,7 @@
                     android:textColor="#000"
                     android:textSize="16dp"
                     android:fontFamily="@font/caviardreamsbold"
-                    android:text="Obervaciones:" />
+                    android:text="Observaciones:" />
 
                 <EditText
                     android:id="@+id/txtObservacionesF"
@@ -835,42 +905,6 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/lblAServicio"
-                    android:layout_width="match_parent"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000"
-                    android:textSize="16dp"
-                    android:fontFamily="@font/caviardreamsbold"
-                    android:text="Asesor Servicio" />
-
-                <EditText
-                    android:id="@+id/txtAServicioF"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/caviardreamsbolditalic"
-                    android:background="@drawable/style_edittext"
-                    android:layout_weight="1"
-                    android:inputType="textMultiLine"
-                    android:lines="1"
-                    android:ems="5"
-                    android:hint="llene aquí" />
-            </LinearLayout>
-
-        </LinearLayout>
-
     </LinearLayout>
 
     <LinearLayout
@@ -879,13 +913,21 @@
         android:orientation="horizontal">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:textColor="#000"
             android:textSize="20dp"
             android:layout_margin="14dp"
             android:fontFamily="@font/caviardreamsbold"
             android:text="Imágenes" />
+
+        <Button
+            android:id="@+id/btn_subirfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="subir firma "
+            ></Button>
     </LinearLayout>
 
 
@@ -983,312 +1025,62 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Manual de Instrucción"/>
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Puerta Izquierda"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Manual de Garantía"/>
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Puerta Derecha"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Tarjeta de Propiedad/Soat"/>
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Espejo lateral Izquierdo"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Luces altas"/>
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Espejo lateral Derecho"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Luces bajas"/>
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Espejo interior cabina"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Luces de retroceso"/>
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Extintor"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Luces viraje"/>
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Botiquin"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Luces de emergencia"/>
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Triángulo (conos)"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Luces de Freno"/>
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Alarma retroceso"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Tercera luz de Freno"/>
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Barrote"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Luces de estacionamiento"/>
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Llave rueda"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Luces patentes"/>
-                        <CheckBox
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/caviardreamsbolditalic"
-                            android:background="@drawable/style_edittext"
-                            android:text="Cinta reflectante"/>
-
-                    </LinearLayout>
-                </LinearLayout>
-
-            </LinearLayout>
-
 
             <LinearLayout
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <com.kyanogen.signatureview.SignatureView
-                    xmlns:sign="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/signature_view"
+                <Button
+                    android:id="@+id/btn_cancelar"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    sign:penSize="5dp"
-                    sign:backgroundColor="#ffffff"
-                    sign:penColor="#000000"
-                    sign:enableSignature="true"/>
+                    android:text="cancelar"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/btn_bg"
+                    android:backgroundTint="@color/perumotorPrincipal"></Button>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/clearf"
-                    android:text="clearf"/>
+                    android:id="@+id/btn_crear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="crear"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/btn_bg"
+                    android:backgroundTint="@color/perumotorPrincipal"></Button>
+
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/savef"
-                    android:text="savef"/>
+                    android:id="@+id/btn_firmar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="firmar"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/btn_bg"
+                    android:backgroundTint="@color/perumotorPrincipal"></Button>
+                <Button
+                    android:id="@+id/btn_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="PDF"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/btn_bg"
+                    android:backgroundTint="@color/perumotorPrincipal"></Button>
             </LinearLayout>
 
         </LinearLayout>

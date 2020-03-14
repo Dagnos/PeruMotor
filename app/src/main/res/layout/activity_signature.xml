@@ -1,0 +1,29 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:sign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="710dp"
+        android:layout_height="510dp"
+        sign:layout_constraintBottom_toBottomOf="parent"
+        sign:layout_constraintEnd_toEndOf="parent"
+        sign:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/style_linearlayout"
+        sign:layout_constraintTop_toTopOf="parent">
+
+        <com.kyanogen.signatureview.SignatureView
+            android:id="@+id/signature_view"
+            android:layout_width="690dp"
+            android:layout_height="490dp"
+            android:gravity="center"
+            sign:enableSignature="true"
+            sign:layout_constraintBottom_toBottomOf="parent"
+            sign:layout_constraintEnd_toEndOf="parent"
+            sign:layout_constraintStart_toStartOf="parent"
+            sign:layout_constraintTop_toTopOf="parent"
+            sign:penColor="@color/signature"
+            sign:penSize="3dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

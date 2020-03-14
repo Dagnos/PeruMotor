@@ -11,8 +11,9 @@ public class Vehiculo {
     private String CODIGOTDP;
     private String NROMOTOR;
     private String NROCHASIS;
+    private String RAZON_SOCIAL;
 
-    public Vehiculo(String IDVEHICULO, String DSMARCA, String DSMODELO, String ANIO, String DSCOLOR, String PLACA, String CODIGOTDP, String NROMOTOR, String NROCHASIS) {
+    public Vehiculo(String IDVEHICULO, String DSMARCA, String DSMODELO, String ANIO, String DSCOLOR, String PLACA, String CODIGOTDP, String NROMOTOR, String NROCHASIS, String RAZON_SOCIAL) {
         this.IDVEHICULO = IDVEHICULO;
         this.DSMARCA = DSMARCA;
         this.DSMODELO = DSMODELO;
@@ -22,6 +23,7 @@ public class Vehiculo {
         this.CODIGOTDP = CODIGOTDP;
         this.NROMOTOR = NROMOTOR;
         this.NROCHASIS = NROCHASIS;
+        this.RAZON_SOCIAL = RAZON_SOCIAL;
     }
 
     public String getIDVEHICULO() {
@@ -95,4 +97,14 @@ public class Vehiculo {
     public void setNROCHASIS(String NROCHASIS) {
         this.NROCHASIS = NROCHASIS;
     }
+
+    public String getRAZON_SOCIAL() {
+        return RAZON_SOCIAL;
+    }
+
+    public void setRAZON_SOCIAL(String RAZON_SOCIAL) {
+        this.RAZON_SOCIAL = RAZON_SOCIAL;
+    }
 }
+
+

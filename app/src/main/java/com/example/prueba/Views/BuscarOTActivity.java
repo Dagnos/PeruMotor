@@ -37,6 +37,8 @@ public class BuscarOTActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.buscar_ot_layout);
 
+        getSupportActionBar().hide();
+
         btn_buscar = (Button) findViewById(R.id.btn_buscar);
         txtBuscarOT = (EditText) findViewById(R.id.txtBuscatOT);
 
@@ -59,9 +61,7 @@ public class BuscarOTActivity extends AppCompatActivity {
                         ordenTrabajoAdapter= new OrdenTrabajoAdapter(BuscarOTActivity.this,ordenTrabajos);
                         recyclerView.setAdapter(ordenTrabajoAdapter);
                         Toast.makeText(BuscarOTActivity.this,"Success",Toast.LENGTH_SHORT).show();
-
                     }
-
                     @Override
                     public void onFailure(Call<List<OrdenTrabajo>> call, Throwable t) {
                         Toast.makeText(BuscarOTActivity.this,"Error",Toast.LENGTH_SHORT).show();
