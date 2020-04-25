@@ -5,13 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.prueba.Interface.RetrofitClient;
+import com.example.prueba.Models.Data;
 import com.example.prueba.R;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -32,15 +39,40 @@ public class LoginActivity extends AppCompatActivity {
         btn_ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (txt_usuario.getText().toString().trim().isEmpty()) {
-                    txt_usuario.setError("Llene este campo por favor");
-                    txt_usuario.requestFocus();
-                    return;
-                }
-                Intent i = new Intent(LoginActivity.this, MainActivity.class);
-                i.putExtra("idasesor", txt_usuario.getText().toString());
 
-                startActivity(i);
+                Call<Data> call = RetrofitClient
+                        .getInstance()
+                        .getApi()
+                        .login(txt_usuario.getText().toString().trim(),txt_contraseña.getText().toString().trim());
+
+                call.enqueue(new Callback<Data>() {
+                    @Override
+                    public void onResponse(Call<Data> call, Response<Data> response) {
+
+                        if(response.code() == 200){
+
+                            //Log.d("user",response.body().getData().get(0))
+                            Log.d("User",response.body().getData().get(0).getNombre());
+
+
+                            //intent put extra..
+                            //STart activity
+
+                        }
+                        else{
+
+                            //error
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Data> call, Throwable t) {
+
+                    }
+                });
 
             }
         });

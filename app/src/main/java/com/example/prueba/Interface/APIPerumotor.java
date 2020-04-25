@@ -1,6 +1,7 @@
 package com.example.prueba.Interface;
 
 import com.example.prueba.Models.CambioFecha;
+import com.example.prueba.Models.Data;
 import com.example.prueba.Models.Factura;
 import com.example.prueba.Models.FormaPago;
 import com.example.prueba.Models.Moneda;
@@ -111,7 +112,6 @@ public interface APIPerumotor {
            @Field("aniomodelo") String aniomodelo
    );
 
-
    @POST("image/upload")
    @FormUrlEncoded
    Call<ResponseClass> UploadImage(
@@ -167,6 +167,14 @@ public interface APIPerumotor {
           @Field("num") String num,
           @Field("image") String image
   );
+
+   @FormUrlEncoded
+   @POST("api/user/signin")
+   Call<Data> login(
+           @Field("usuario") String usuario,
+           @Field("contrasenia") String contrasenia
+
+   );
 }
 
 
